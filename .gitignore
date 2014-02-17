@@ -1,0 +1,10 @@
+*~
+vendor/*
+.htaccess
+.*~
+config.php
+mouf/no_commit
+mouf/MoufUsers.php
+.buildpath
+.project
+.settings/*
