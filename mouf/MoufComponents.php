@@ -405,6 +405,60 @@ $moufManager->addComponentInstances(array (
       ),
     ),
   ),
+  'dbpatch.20140218-patch-initial-dump-import' => 
+  array (
+    'class' => 'Mouf\\Database\\Patcher\\DatabasePatch',
+    'external' => false,
+    'weak' => false,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => 'dbConnection',
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        'value' => '20140218-patch-initial-dump-import',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'value' => 'database/up/20140218-patch-initial-dump-import.sql',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'value' => NULL,
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      4 => 
+      array (
+        'value' => 'First batch that will create the DB in first place',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
   'defaultFieldWrapperRenderer' => 
   array (
     'class' => 'Mouf\\MVC\\BCE\\FormRenderers\\Bootstrap\\Wrappers\\DefaultFieldWrapperRenderer',
@@ -1112,6 +1166,19 @@ $moufManager->addComponentInstances(array (
     'class' => 'Mouf\\MVC\\BCE\\Classes\\Renderers\\PasswordFieldRenderer',
     'external' => false,
     'weak' => false,
+  ),
+  'patchService' => 
+  array (
+    'class' => 'Mouf\\Utils\\Patcher\\PatchService',
+    'external' => false,
+    'weak' => false,
+    'setterBinds' => 
+    array (
+      'setPatchs' => 
+      array (
+        0 => 'dbpatch.20140218-patch-initial-dump-import',
+      ),
+    ),
   ),
   'projectDao' => 
   array (
@@ -3084,6 +3151,13 @@ unset($moufManager);
 	 }
 
 	/**
+	 * @return Mouf\Utils\Patcher\PatchService
+	 */
+	 public static function getPatchService() {
+	 	return MoufManager::getMoufManager()->getInstance('patchService');
+	 }
+
+	/**
 	 * @return Test\Dao\ProjectDao
 	 */
 	 public static function getProjectDao() {
@@ -3417,6 +3491,13 @@ unset($moufManager);
 	 */
 	 public static function getValidatorsTranslateService() {
 	 	return MoufManager::getMoufManager()->getInstance('validatorsTranslateService');
+	 }
+
+	/**
+	 * @return Mouf\Database\Patcher\DatabasePatch
+	 */
+	 public static function getDbpatch_20140218patchinitialdumpimport() {
+	 	return MoufManager::getMoufManager()->getInstance('dbpatch.20140218-patch-initial-dump-import');
 	 }
 
 }

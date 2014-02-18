@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2c180cb5b87be41228644d010e38f855",
+    "hash": "f836046a42be6125bf8dfa56deff1219",
     "packages": [
         {
             "name": "mouf/database.dao-interface",
@@ -113,6 +113,66 @@
                 "mouf"
             ],
             "time": "2014-01-16 16:15:42"
+        },
+        {
+            "name": "mouf/database.patcher",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/database.patcher.git",
+                "reference": "32043969442f1ded8f0152d198297d743ba96c32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/database.patcher/zipball/32043969442f1ded8f0152d198297d743ba96c32",
+                "reference": "32043969442f1ded8f0152d198297d743ba96c32",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/database.dbconnection": "~2.0",
+                "mouf/utils.patcher": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "file",
+                            "file": "src/install.php",
+                            "description": "Create the 'patches' table in your database to track patches applied."
+                        }
+                    ],
+                    "require-admin": [
+                        "src/DBPatchAdmin.php"
+                    ],
+                    "logo": "icon.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Database\\Patcher": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "A database patch system designed for Mouf than enables developers to know what patch has been run and what needs to be run on its environment. This package adds database support to the Mouf patch system (mouf/utils.patcher).",
+            "homepage": "https://mouf-php.com/mouf/database.patcher",
+            "keywords": [
+                "database",
+                "mouf",
+                "patch"
+            ],
+            "time": "2013-10-29 18:21:58"
         },
         {
             "name": "mouf/database.querywriter",
@@ -2861,6 +2921,79 @@
             "time": "2013-10-29 18:36:52"
         },
         {
+            "name": "mouf/utils.patcher",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.patcher.git",
+                "reference": "f9bdd08c69223fc2f9ec7668ed32bc80207a6b69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.patcher/zipball/f9bdd08c69223fc2f9ec7668ed32bc80207a6b69",
+                "reference": "f9bdd08c69223fc2f9ec7668ed32bc80207a6b69",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/mouf-validators-interface": "~2.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "file",
+                            "file": "src/install.php",
+                            "description": "Create the patchService instance."
+                        }
+                    ],
+                    "doc": [
+                        {
+                            "title": "For packages developers",
+                            "url": "doc/for_packages_developer.md"
+                        },
+                        {
+                            "title": "Advanced topics",
+                            "url": "doc/advanced.md"
+                        },
+                        {
+                            "title": "Troubleshooting",
+                            "url": "doc/troubleshooting.md"
+                        }
+                    ],
+                    "require-admin": [
+                        "src/PatchAdmin.php"
+                    ],
+                    "logo": "icon.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Patcher": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "A patch system designed for Mouf than enables developers to know what patch has been run and what needs to be run on its environment. Very useful for database patches.",
+            "homepage": "https://mouf-php.com/mouf/utils.patcher",
+            "keywords": [
+                "database",
+                "mouf",
+                "patch"
+            ],
+            "time": "2013-11-05 14:32:16"
+        },
+        {
             "name": "mouf/utils.session.session-manager",
             "version": "2.1.x-dev",
             "source": {
@@ -3061,12 +3194,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "e9e474847542bd30c394c6aca81a04ea7bc0a5b3"
+                "reference": "c756082c0ccf103733682e5243c114c165d77158"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/e9e474847542bd30c394c6aca81a04ea7bc0a5b3",
-                "reference": "e9e474847542bd30c394c6aca81a04ea7bc0a5b3",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/c756082c0ccf103733682e5243c114c165d77158",
+                "reference": "c756082c0ccf103733682e5243c114c165d77158",
                 "shasum": ""
             },
             "require": {
@@ -3090,11 +3223,19 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
-                    "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com"
+                    "name": "Armin Ronacher2",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "https://github.com/fabpot/Twig/graphs/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -3102,7 +3243,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-01-29 08:45:07"
+            "time": "2014-02-13 21:54:38"
         },
         {
             "name": "twitter/bootstrap",
@@ -3110,12 +3251,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "9195d8e8eb51208e4272e4c7e0851e2695da1a0d"
+                "reference": "00b3b8b0b8d5515b6eb1ea7064f6d88175306ed9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/9195d8e8eb51208e4272e4c7e0851e2695da1a0d",
-                "reference": "9195d8e8eb51208e4272e4c7e0851e2695da1a0d",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/00b3b8b0b8d5515b6eb1ea7064f6d88175306ed9",
+                "reference": "00b3b8b0b8d5515b6eb1ea7064f6d88175306ed9",
                 "shasum": ""
             },
             "type": "library",
@@ -3144,7 +3285,7 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2014-01-30 05:57:44"
+            "time": "2014-02-17 04:37:50"
         }
     ],
     "packages-dev": [

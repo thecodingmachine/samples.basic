@@ -17,198 +17,212 @@ return array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
-    'package' => 'mouf/utils.cache.no-cache',
+    'package' => 'mouf/utils.patcher',
   ),
   2 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
-    'package' => 'mouf/utils.log.errorlog_logger',
+    'package' => 'mouf/database.patcher',
   ),
   3 => 
   array (
     'status' => 'done',
-    'type' => 'url',
-    'url' => 'tdbminstall/',
-    'package' => 'mouf/database.tdbm',
+    'type' => 'file',
+    'file' => 'src/install.php',
+    'package' => 'mouf/utils.cache.no-cache',
   ),
   4 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
-    'package' => 'mouf/html.renderer.twig-extensions',
+    'package' => 'mouf/utils.log.errorlog_logger',
   ),
   5 => 
   array (
     'status' => 'done',
-    'type' => 'file',
-    'file' => 'src/install.php',
-    'package' => 'mouf/utils.cache.file-cache',
+    'type' => 'url',
+    'url' => 'tdbminstall/',
+    'package' => 'mouf/database.tdbm',
   ),
   6 => 
   array (
     'status' => 'done',
-    'type' => 'class',
-    'class' => 'Mouf\\Utils\\Log\\Psr\\ErrorLogLoggerInstaller',
-    'package' => 'mouf/utils.log.psr.errorlog_logger',
+    'type' => 'file',
+    'file' => 'src/install.php',
+    'package' => 'mouf/html.renderer.twig-extensions',
   ),
   7 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
-    'package' => 'mouf/utils.cache.apc-cache',
+    'package' => 'mouf/utils.cache.file-cache',
   ),
   8 => 
+  array (
+    'status' => 'done',
+    'type' => 'class',
+    'class' => 'Mouf\\Utils\\Log\\Psr\\ErrorLogLoggerInstaller',
+    'package' => 'mouf/utils.log.psr.errorlog_logger',
+  ),
+  9 => 
+  array (
+    'status' => 'done',
+    'type' => 'file',
+    'file' => 'src/install.php',
+    'package' => 'mouf/utils.cache.apc-cache',
+  ),
+  10 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
     'package' => 'mouf/html.renderer',
   ),
-  9 => 
+  11 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/html.utils.weblibrarymanager',
   ),
-  10 => 
+  12 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/javascript.jquery.jquery',
   ),
-  11 => 
+  13 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/html.utils.bootstrap',
   ),
-  12 => 
+  14 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
     'package' => 'mouf/utils.i18n.fine',
   ),
-  13 => 
+  15 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
     'package' => 'mouf/utils.session.session-manager',
   ),
-  14 => 
+  16 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
     'package' => 'mouf/html.widgets.messageservice',
   ),
-  15 => 
+  17 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
     'package' => 'mouf/html.template.bootstrap',
   ),
-  16 => 
+  18 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/validatorsInstall.php',
     'package' => 'mouf/utils.common.validators',
   ),
-  17 => 
+  19 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/splashCommonInstall.php',
     'package' => 'mouf/mvc.splash-common',
   ),
-  18 => 
+  20 => 
   array (
     'status' => 'done',
     'type' => 'class',
     'class' => 'Mouf\\Utils\\Constants\\SecretInstaller',
     'package' => 'mouf/utils.constants.secret',
   ),
-  19 => 
+  21 => 
   array (
     'status' => 'done',
     'type' => 'url',
     'url' => 'splashinstall/',
     'package' => 'mouf/mvc.splash',
   ),
-  20 => 
+  22 => 
   array (
     'status' => 'done',
     'type' => 'url',
     'url' => 'splashinstall/writeHtAccess',
     'package' => 'mouf/mvc.splash',
   ),
-  21 => 
+  23 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/html.utils.ckeditor',
   ),
-  22 => 
+  24 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/javascript.fileuploader',
   ),
-  23 => 
+  25 => 
   array (
     'status' => 'done',
     'type' => 'class',
     'class' => 'Mouf\\Html\\Widgets\\Form\\FormElementInstaller',
     'package' => 'mouf/html.widgets.form-elements',
   ),
-  24 => 
+  26 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/javascript.jquery.jquery-ui',
   ),
-  25 => 
+  27 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/javascript.jquery.jquery-validate',
   ),
-  26 => 
+  28 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
     'package' => 'mouf/utils.common.formatters',
   ),
-  27 => 
+  29 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/bceInstall.php',
     'package' => 'mouf/mvc.bce',
   ),
-  28 => 
+  30 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/javascript.historyjs',
   ),
-  29 => 
+  31 => 
   array (
     'status' => 'done',
     'type' => 'file',
