@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Lun 17 Février 2014 à 10:53
+-- Généré le: Mer 05 Mars 2014 à 11:42
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.12
 
@@ -25,6 +25,29 @@ USE `mouf_samples`;
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `patches`
+--
+
+CREATE TABLE IF NOT EXISTS `patches` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `unique_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `status` enum('awaiting','applied','skipped','error') COLLATE utf8_unicode_ci NOT NULL,
+  `exec_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `error_message` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `unique_name` (`unique_name`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `patches`
+--
+
+INSERT INTO `patches` (`id`, `unique_name`, `status`, `exec_date`, `error_message`) VALUES
+(1, '20140218-patch-initial-dump-import', 'skipped', '2014-02-18 06:33:40', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `project`
 --
 
@@ -34,17 +57,18 @@ CREATE TABLE IF NOT EXISTS `project` (
   `label` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=15 ;
 
 --
 -- Contenu de la table `project`
 --
 
 INSERT INTO `project` (`id`, `user_id`, `label`) VALUES
-(1, 1, 'project 1'),
+
 (2, 2, 'project 2'),
 (9, 1, 'aaaaaaaaaaaaa'),
-(10, 1, 'sssssssssss');
+(11, 1, 'aaa'),
+(14, 1, 'dgeryj');
 
 -- --------------------------------------------------------
 
@@ -110,7 +134,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`id`, `role_id`, `name`, `email`, `birth_date`, `story`) VALUES
-(1, 1, 'John Doe', 'john@mouf-php.com', NULL, 'MMartinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans, ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens perquisitor malivolus tandem desineret quieti coalitos homines in aperta pericula proiectare.'),
+(1, 1, 'John Doeee', 'johf@ehp.com', NULL, 'MMartinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans, ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens perquisitor malivolus tandem desineret quieti coalitos homines in aperta pericula proiectare.'),
 (2, 2, 'Stan', 'stan@mouf-php.com', '1985-07-30', 'Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans, ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens perquisitor malivolus tandem desineret quieti coalitos homines in aperta pericula proiectare.');
 
 -- --------------------------------------------------------
@@ -126,7 +150,7 @@ CREATE TABLE IF NOT EXISTS `user_skill` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   KEY `skill_id` (`skill_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
 
 --
 -- Contenu de la table `user_skill`
@@ -134,8 +158,9 @@ CREATE TABLE IF NOT EXISTS `user_skill` (
 
 INSERT INTO `user_skill` (`id`, `user_id`, `skill_id`) VALUES
 (1, 1, 1),
-(2, 1, 2),
-(3, 2, 3);
+(3, 2, 3),
+(4, 1, 3),
+(5, 1, 4);
 
 --
 -- Contraintes pour les tables exportées
