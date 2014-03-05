@@ -558,16 +558,16 @@
         },
         {
             "name": "mouf/html.template.bootstrap",
-            "version": "3.0.x-dev",
+            "version": "3.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/html.template.bootstrap.git",
-                "reference": "fd5789356b878212a7af0f2d1ca191cfeb750e32"
+                "reference": "8ba8747f17968d016d01695da35dcbb96e8fa3ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/html.template.bootstrap/zipball/fd5789356b878212a7af0f2d1ca191cfeb750e32",
-                "reference": "fd5789356b878212a7af0f2d1ca191cfeb750e32",
+                "url": "https://api.github.com/repos/thecodingmachine/html.template.bootstrap/zipball/8ba8747f17968d016d01695da35dcbb96e8fa3ac",
+                "reference": "8ba8747f17968d016d01695da35dcbb96e8fa3ac",
                 "shasum": ""
             },
             "require": {
@@ -614,7 +614,7 @@
                 "mouf",
                 "template"
             ],
-            "time": "2013-11-25 11:49:25"
+            "time": "2014-03-05 09:18:57"
         },
         {
             "name": "mouf/html.template.templateinterface",
@@ -1020,12 +1020,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/html.widgets.form-elements.git",
-                "reference": "35193aae657b60b4edcaee7be4d917333ba4f214"
+                "reference": "f2c37f31c400691e04d795f5423c2ba44b46ad8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/html.widgets.form-elements/zipball/35193aae657b60b4edcaee7be4d917333ba4f214",
-                "reference": "35193aae657b60b4edcaee7be4d917333ba4f214",
+                "url": "https://api.github.com/repos/thecodingmachine/html.widgets.form-elements/zipball/f2c37f31c400691e04d795f5423c2ba44b46ad8e",
+                "reference": "f2c37f31c400691e04d795f5423c2ba44b46ad8e",
                 "shasum": ""
             },
             "require": {
@@ -1070,7 +1070,7 @@
                 "tags",
                 "tohtml"
             ],
-            "time": "2013-12-03 10:38:31"
+            "time": "2014-03-05 08:36:16"
         },
         {
             "name": "mouf/html.widgets.menu",
@@ -1658,12 +1658,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/mvc.bce.git",
-                "reference": "9111c016f35ab91800bfe96605c984b40586619d"
+                "reference": "edb3c27eaf35962e37f731b8f161ca0386db57d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/mvc.bce/zipball/9111c016f35ab91800bfe96605c984b40586619d",
-                "reference": "9111c016f35ab91800bfe96605c984b40586619d",
+                "url": "https://api.github.com/repos/thecodingmachine/mvc.bce/zipball/edb3c27eaf35962e37f731b8f161ca0386db57d7",
+                "reference": "edb3c27eaf35962e37f731b8f161ca0386db57d7",
                 "shasum": ""
             },
             "require": {
@@ -1751,7 +1751,7 @@
                 "form",
                 "form builder"
             ],
-            "time": "2014-03-04 17:23:58"
+            "time": "2014-03-05 09:58:52"
         },
         {
             "name": "mouf/mvc.splash",
@@ -3258,12 +3258,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "e381635b1faf7480bcf54618804a62dd4a049a93"
+                "reference": "d7dc8a7bd3cecffb437c8491dbe93665d33bbb62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/e381635b1faf7480bcf54618804a62dd4a049a93",
-                "reference": "e381635b1faf7480bcf54618804a62dd4a049a93",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/d7dc8a7bd3cecffb437c8491dbe93665d33bbb62",
+                "reference": "d7dc8a7bd3cecffb437c8491dbe93665d33bbb62",
                 "shasum": ""
             },
             "type": "library",
@@ -3298,7 +3298,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2014-03-04 05:39:53"
+            "time": "2014-03-05 06:42:50"
         }
     ],
     "packages-dev": [
