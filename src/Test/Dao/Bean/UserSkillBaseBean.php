@@ -79,27 +79,6 @@ class UserSkillBaseBean extends TDBMObject
 	}
 	
 	/**
-	 * Returns the SkillBean object bound to this object via the skill_id column.
-	 * 
-	 * @return SkillBean
-	 */
-	public function getSkillBySkillId() {
-		if ($this->skill_id == null) {
-			return null;
-		}
-		return $this->tdbmService->getObject("skill", $this->skill_id, "Test\\Dao\\Bean\\SkillBean", true);
-	}
-	
-	/**
-	 * The setter for the SkillBean object bound to this object via the skill_id column.
-	 *
-	 * @param SkillBean $object
-	 */
-	public function setSkillBySkillId(SkillBean $object = null) {
-		$this->__set('skill_id', ($object == null)?null:$object->__get('id'));
-	}
-	
-	/**
 	 * Returns the UserBean object bound to this object via the user_id column.
 	 * 
 	 * @return UserBean
@@ -122,24 +101,22 @@ class UserSkillBaseBean extends TDBMObject
 	
 	/**
 	 * Returns the SkillBean object bound to this object via the skill_id column.
-	 * This is an alias for the getSkillBySkillId method.  
-	 *
+	 * 
 	 * @return SkillBean
 	 */
-	public function getSkill() {
+	public function getSkillBySkillId() {
 		if ($this->skill_id == null) {
 			return null;
 		}
-		return $this->tdbmService->getObject("skill", $this->skill_id, "Test\\Dao\\Bean\\SkillBean");
+		return $this->tdbmService->getObject("skill", $this->skill_id, "Test\\Dao\\Bean\\SkillBean", true);
 	}
 	
 	/**
-	 * The setter for the "skill_id" column.
-	 * This is an alias for the setSkillBySkillId method.
+	 * The setter for the SkillBean object bound to this object via the skill_id column.
 	 *
 	 * @param SkillBean $object
 	 */
-	public function setSkill(SkillBean $object = null) {
+	public function setSkillBySkillId(SkillBean $object = null) {
 		$this->__set('skill_id', ($object == null)?null:$object->__get('id'));
 	}
 	
@@ -164,6 +141,29 @@ class UserSkillBaseBean extends TDBMObject
 	 */
 	public function setUser(UserBean $object = null) {
 		$this->__set('user_id', ($object == null)?null:$object->__get('id'));
+	}
+	
+	/**
+	 * Returns the SkillBean object bound to this object via the skill_id column.
+	 * This is an alias for the getSkillBySkillId method.  
+	 *
+	 * @return SkillBean
+	 */
+	public function getSkill() {
+		if ($this->skill_id == null) {
+			return null;
+		}
+		return $this->tdbmService->getObject("skill", $this->skill_id, "Test\\Dao\\Bean\\SkillBean");
+	}
+	
+	/**
+	 * The setter for the "skill_id" column.
+	 * This is an alias for the setSkillBySkillId method.
+	 *
+	 * @param SkillBean $object
+	 */
+	public function setSkill(SkillBean $object = null) {
+		$this->__set('skill_id', ($object == null)?null:$object->__get('id'));
 	}
 	
 }

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f836046a42be6125bf8dfa56deff1219",
+    "hash": "def00ef980a6699debf500597665600d",
     "packages": [
         {
             "name": "mouf/database.dao-interface",
@@ -120,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/database.patcher.git",
-                "reference": "32043969442f1ded8f0152d198297d743ba96c32"
+                "reference": "21568d3705be83fa791b16807ada68051d5ce9a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/database.patcher/zipball/32043969442f1ded8f0152d198297d743ba96c32",
-                "reference": "32043969442f1ded8f0152d198297d743ba96c32",
+                "url": "https://api.github.com/repos/thecodingmachine/database.patcher/zipball/21568d3705be83fa791b16807ada68051d5ce9a6",
+                "reference": "21568d3705be83fa791b16807ada68051d5ce9a6",
                 "shasum": ""
             },
             "require": {
@@ -172,7 +172,7 @@
                 "mouf",
                 "patch"
             ],
-            "time": "2013-10-29 18:21:58"
+            "time": "2014-03-04 10:48:54"
         },
         {
             "name": "mouf/database.querywriter",
@@ -558,23 +558,23 @@
         },
         {
             "name": "mouf/html.template.bootstrap",
-            "version": "2.3.3.x-dev",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/html.template.bootstrap.git",
-                "reference": "566a42fb3f15ae671a9f045f8943b1bb68d39f73"
+                "reference": "fd5789356b878212a7af0f2d1ca191cfeb750e32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/html.template.bootstrap/zipball/566a42fb3f15ae671a9f045f8943b1bb68d39f73",
-                "reference": "566a42fb3f15ae671a9f045f8943b1bb68d39f73",
+                "url": "https://api.github.com/repos/thecodingmachine/html.template.bootstrap/zipball/fd5789356b878212a7af0f2d1ca191cfeb750e32",
+                "reference": "fd5789356b878212a7af0f2d1ca191cfeb750e32",
                 "shasum": ""
             },
             "require": {
                 "mouf/html.template.templateinterface": "~2.1",
-                "mouf/html.utils.bootstrap": "2.3.*",
+                "mouf/html.utils.bootstrap": "3.0.*",
                 "mouf/html.utils.weblibrarymanager": "~2.0",
-                "mouf/html.widgets.menu": "2.*",
+                "mouf/html.widgets.menu": "~3.0",
                 "mouf/html.widgets.messageservice": "~3.0",
                 "php": ">=5.3.0"
             },
@@ -614,7 +614,7 @@
                 "mouf",
                 "template"
             ],
-            "time": "2013-11-07 10:21:59"
+            "time": "2013-11-25 11:49:25"
         },
         {
             "name": "mouf/html.template.templateinterface",
@@ -663,21 +663,22 @@
         },
         {
             "name": "mouf/html.utils.bootstrap",
-            "version": "2.3.1.x-dev",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/html.utils.bootstrap.git",
-                "reference": "a4e1baf73a77dd5f051b027863f55f329f86008c"
+                "reference": "6ad94f437e0e6fd30f9ebe453dabe83906c3465a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/html.utils.bootstrap/zipball/a4e1baf73a77dd5f051b027863f55f329f86008c",
-                "reference": "a4e1baf73a77dd5f051b027863f55f329f86008c",
+                "url": "https://api.github.com/repos/thecodingmachine/html.utils.bootstrap/zipball/6ad94f437e0e6fd30f9ebe453dabe83906c3465a",
+                "reference": "6ad94f437e0e6fd30f9ebe453dabe83906c3465a",
                 "shasum": ""
             },
             "require": {
                 "mouf/javascript.jquery.jquery": "~1.7",
-                "php": ">=5.3.0"
+                "php": ">=5.3.0",
+                "twitter/bootstrap": "3.0.*"
             },
             "type": "mouf-library",
             "extra": {
@@ -710,7 +711,7 @@
                 "javascript",
                 "mouf"
             ],
-            "time": "2013-03-19 22:41:54"
+            "time": "2013-09-27 12:06:40"
         },
         {
             "name": "mouf/html.utils.ckeditor",
@@ -863,12 +864,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/mouf-html.widgets.evolugrid.git",
-                "reference": "1eb7de834fb88bbecde05cc2fa95db35b81f1a4f"
+                "reference": "ee7e300bbb74f6f798666eb07e5a9fd2d97327af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/mouf-html.widgets.evolugrid/zipball/1eb7de834fb88bbecde05cc2fa95db35b81f1a4f",
-                "reference": "1eb7de834fb88bbecde05cc2fa95db35b81f1a4f",
+                "url": "https://api.github.com/repos/thecodingmachine/mouf-html.widgets.evolugrid/zipball/ee7e300bbb74f6f798666eb07e5a9fd2d97327af",
+                "reference": "ee7e300bbb74f6f798666eb07e5a9fd2d97327af",
                 "shasum": ""
             },
             "require": {
@@ -876,7 +877,7 @@
                 "mouf/html.htmlelement": ">=2.0-dev,<3.0",
                 "mouf/html.utils.weblibrarymanager": "~2.0",
                 "mouf/javascript.historyjs": "~1.8",
-                "mouf/javascript.jquery.jquery": "~1.7",
+                "mouf/javascript.jquery.jquery": ">=1.11",
                 "mouf/mvc.splash-common": "~4.0",
                 "mouf/utils.common.conditioninterface": "2.*",
                 "mouf/utils.common.formatters": "~3.0",
@@ -948,7 +949,7 @@
                 "javscript",
                 "widget"
             ],
-            "time": "2014-01-20 09:27:20"
+            "time": "2014-02-18 11:37:55"
         },
         {
             "name": "mouf/html.widgets.fileuploaderwidget",
@@ -956,12 +957,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/html.widgets.fileuploaderwidget.git",
-                "reference": "a00c5a9c5533568ca559cd9b32a3cccd9e0b1e05"
+                "reference": "9510189e0346b478830b27095f8d2cd7c22dfa29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/html.widgets.fileuploaderwidget/zipball/a00c5a9c5533568ca559cd9b32a3cccd9e0b1e05",
-                "reference": "a00c5a9c5533568ca559cd9b32a3cccd9e0b1e05",
+                "url": "https://api.github.com/repos/thecodingmachine/html.widgets.fileuploaderwidget/zipball/9510189e0346b478830b27095f8d2cd7c22dfa29",
+                "reference": "9510189e0346b478830b27095f8d2cd7c22dfa29",
                 "shasum": ""
             },
             "require": {
@@ -1011,7 +1012,7 @@
                 "uploader",
                 "widget"
             ],
-            "time": "2014-01-17 15:32:13"
+            "time": "2014-03-04 07:42:51"
         },
         {
             "name": "mouf/html.widgets.form-elements",
@@ -1073,24 +1074,34 @@
         },
         {
             "name": "mouf/html.widgets.menu",
-            "version": "2.0.x-dev",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/html.widgets.menu.git",
-                "reference": "c62f3289b0808544a3d762254addfa1cc84a97c5"
+                "reference": "4dfe6ce4b361ef71edca0776c67a058e2780d72c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/html.widgets.menu/zipball/c62f3289b0808544a3d762254addfa1cc84a97c5",
-                "reference": "c62f3289b0808544a3d762254addfa1cc84a97c5",
+                "url": "https://api.github.com/repos/thecodingmachine/html.widgets.menu/zipball/4dfe6ce4b361ef71edca0776c67a058e2780d72c",
+                "reference": "4dfe6ce4b361ef71edca0776c67a058e2780d72c",
                 "shasum": ""
             },
             "require": {
+                "mouf/html.renderer": "~1.0",
                 "mouf/utils.common.conditioninterface": "2.*",
-                "mouf/utils.i18n.fine": "3.*",
                 "php": ">=5.3.0"
             },
             "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "file": "src/install.php",
+                            "type": "file"
+                        }
+                    ]
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Mouf": "src/"
@@ -1114,7 +1125,7 @@
                 "mouf",
                 "template"
             ],
-            "time": "2013-05-18 13:07:02"
+            "time": "2013-10-29 15:37:50"
         },
         {
             "name": "mouf/html.widgets.messageservice",
@@ -1281,16 +1292,16 @@
         },
         {
             "name": "mouf/javascript.jquery.jquery",
-            "version": "1.9.1.x-dev",
+            "version": "1.11.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/javascript.jquery.jquery.git",
-                "reference": "b2e0d72b63588b15bf9df286e246419f0b3622f6"
+                "reference": "7bae0fbeb391540906ec0ef5e40da6263e5133a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/javascript.jquery.jquery/zipball/b2e0d72b63588b15bf9df286e246419f0b3622f6",
-                "reference": "b2e0d72b63588b15bf9df286e246419f0b3622f6",
+                "url": "https://api.github.com/repos/thecodingmachine/javascript.jquery.jquery/zipball/7bae0fbeb391540906ec0ef5e40da6263e5133a3",
+                "reference": "7bae0fbeb391540906ec0ef5e40da6263e5133a3",
                 "shasum": ""
             },
             "require": {
@@ -1326,7 +1337,7 @@
                 "jquery",
                 "mouf"
             ],
-            "time": "2013-02-14 10:53:39"
+            "time": "2014-02-18 10:06:30"
         },
         {
             "name": "mouf/javascript.jquery.jquery-ui",
@@ -1557,12 +1568,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/mouf-installer.git",
-                "reference": "f716fffdb252f416e46f584856aff89a504b9a1a"
+                "reference": "ec30d863405283cc3774b1e65188a791b6ceb9d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/mouf-installer/zipball/f716fffdb252f416e46f584856aff89a504b9a1a",
-                "reference": "f716fffdb252f416e46f584856aff89a504b9a1a",
+                "url": "https://api.github.com/repos/thecodingmachine/mouf-installer/zipball/ec30d863405283cc3774b1e65188a791b6ceb9d3",
+                "reference": "ec30d863405283cc3774b1e65188a791b6ceb9d3",
                 "shasum": ""
             },
             "require": {
@@ -1597,7 +1608,7 @@
                 "install",
                 "mouf"
             ],
-            "time": "2013-10-29 18:21:58"
+            "time": "2014-02-26 11:35:20"
         },
         {
             "name": "mouf/mouf-validators-interface",
@@ -1643,16 +1654,16 @@
         },
         {
             "name": "mouf/mvc.bce",
-            "version": "3.1.x-dev",
+            "version": "3.2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/mvc.bce.git",
-                "reference": "2321e71c3ef8a83ccffdbefa98bdbcbcddb43a4c"
+                "reference": "9111c016f35ab91800bfe96605c984b40586619d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/mvc.bce/zipball/2321e71c3ef8a83ccffdbefa98bdbcbcddb43a4c",
-                "reference": "2321e71c3ef8a83ccffdbefa98bdbcbcddb43a4c",
+                "url": "https://api.github.com/repos/thecodingmachine/mvc.bce/zipball/9111c016f35ab91800bfe96605c984b40586619d",
+                "reference": "9111c016f35ab91800bfe96605c984b40586619d",
                 "shasum": ""
             },
             "require": {
@@ -1690,16 +1701,12 @@
                     "logo": "icons/logo.png",
                     "doc": [
                         {
-                            "title": "README",
-                            "url": "doc/readme.md"
-                        },
-                        {
                             "title": "Quickstart Guide",
                             "url": "doc/quickstart.md"
                         },
                         {
                             "title": "Configuring a BCE Form",
-                            "url": "doc/configure-bce-form.md"
+                            "url": "doc/configure-bce-forms.md"
                         },
                         {
                             "title": "Advanced fields",
@@ -1744,7 +1751,7 @@
                 "form",
                 "form builder"
             ],
-            "time": "2014-01-30 06:43:57"
+            "time": "2014-03-04 17:23:58"
         },
         {
             "name": "mouf/mvc.splash",
@@ -3194,12 +3201,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "c756082c0ccf103733682e5243c114c165d77158"
+                "reference": "8c5844a56fe5cbe13ef3becd9ed9f7b3ade104a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/c756082c0ccf103733682e5243c114c165d77158",
-                "reference": "c756082c0ccf103733682e5243c114c165d77158",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/8c5844a56fe5cbe13ef3becd9ed9f7b3ade104a2",
+                "reference": "8c5844a56fe5cbe13ef3becd9ed9f7b3ade104a2",
                 "shasum": ""
             },
             "require": {
@@ -3228,7 +3235,7 @@
                     "role": "Lead Developer"
                 },
                 {
-                    "name": "Armin Ronacher2",
+                    "name": "Armin Ronacher",
                     "email": "armin.ronacher@active-4.com",
                     "role": "Project Founder"
                 },
@@ -3243,7 +3250,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-02-13 21:54:38"
+            "time": "2014-02-24 15:39:56"
         },
         {
             "name": "twitter/bootstrap",
@@ -3251,12 +3258,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "00b3b8b0b8d5515b6eb1ea7064f6d88175306ed9"
+                "reference": "e381635b1faf7480bcf54618804a62dd4a049a93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/00b3b8b0b8d5515b6eb1ea7064f6d88175306ed9",
-                "reference": "00b3b8b0b8d5515b6eb1ea7064f6d88175306ed9",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/e381635b1faf7480bcf54618804a62dd4a049a93",
+                "reference": "e381635b1faf7480bcf54618804a62dd4a049a93",
                 "shasum": ""
             },
             "type": "library",
@@ -3279,13 +3286,19 @@
                     "email": "markdotto@gmail.com"
                 }
             ],
-            "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
             "homepage": "http://getbootstrap.com",
             "keywords": [
-                "bootstrap",
-                "css"
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "less",
+                "mobile-first",
+                "responsive",
+                "web"
             ],
-            "time": "2014-02-17 04:37:50"
+            "time": "2014-03-04 05:39:53"
         }
     ],
     "packages-dev": [

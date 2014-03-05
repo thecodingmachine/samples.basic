@@ -72,6 +72,20 @@ $moufManager->setAllVariables(array (
 ));
 
 $moufManager->addComponentInstances(array (
+  '__anonymous__292100_1392796318819' => 
+  array (
+    'class' => 'Mouf\\MVC\\BCE\\BCEFormInstance',
+    'external' => false,
+    'weak' => true,
+    'anonymous' => true,
+    'fieldProperties' => 
+    array (
+    ),
+    'fieldBinds' => 
+    array (
+      'form' => 'simpleUserForm',
+    ),
+  ),
   '__anonymous__743966_1390581890217' => 
   array (
     'class' => 'Mouf\\MVC\\BCE\\BCEFormInstance',
@@ -333,12 +347,24 @@ $moufManager->addComponentInstances(array (
     'external' => false,
     'setterBinds' => 
     array (
+      'setPatcheDao' => 'patcheDao',
       'setProjectDao' => 'projectDao',
       'setRoleDao' => 'roleDao',
       'setSkillDao' => 'skillDao',
       'setUserDao' => 'userDao',
       'setUserSkillDao' => 'userSkillDao',
     ),
+    'fieldProperties' => 
+    array (
+    ),
+    'setterProperties' => 
+    array (
+    ),
+    'fieldBinds' => 
+    array (
+    ),
+    'weak' => false,
+    'comment' => '',
   ),
   'datePickerRenderer' => 
   array (
@@ -806,7 +832,7 @@ $moufManager->addComponentInstances(array (
       array (
         'value' => 
         array (
-          0 => 'vendor/mouf/javascript.jquery.jquery/jquery-1.9.1.min.js',
+          0 => 'vendor/mouf/javascript.jquery.jquery/jquery-1.11.0.js',
         ),
         'parametertype' => 'primitive',
         'type' => 'string',
@@ -1116,6 +1142,51 @@ $moufManager->addComponentInstances(array (
       ),
     ),
   ),
+  'packageRenderer_mouf/html.widgets.menu' => 
+  array (
+    'class' => 'Mouf\\Html\\Renderer\\FileBasedRenderer',
+    'external' => false,
+    'weak' => false,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => 'vendor/mouf/html.widgets.menu/src/templates',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        'value' => 'rendererCacheService',
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'value' => 'package',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'value' => 0,
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
   'packageRenderer_mouf/html.widgets.messageservice' => 
   array (
     'class' => 'Mouf\\Html\\Renderer\\FileBasedRenderer',
@@ -1180,6 +1251,15 @@ $moufManager->addComponentInstances(array (
       ),
     ),
   ),
+  'patcheDao' => 
+  array (
+    'class' => 'Test\\Dao\\PatcheDao',
+    'external' => false,
+    'setterBinds' => 
+    array (
+      'setTdbmService' => 'tdbmService',
+    ),
+  ),
   'projectDao' => 
   array (
     'class' => 'Test\\Dao\\ProjectDao',
@@ -1199,12 +1279,12 @@ $moufManager->addComponentInstances(array (
       'mainDAO' => 'projectDao',
       'scriptManager' => 'scriptManager',
       'idFieldDescriptor' => 'projectFormidDesc',
+      'validationHandler' => 'queryValidateHandler',
+      'renderer' => 'aseRenderer',
       'fieldDescriptors' => 
       array (
         0 => 'projectFormlabelDesc',
       ),
-      'validationHandler' => 'queryValidateHandler',
-      'renderer' => 'aseRenderer',
     ),
     'fieldProperties' => 
     array (
@@ -1424,6 +1504,118 @@ $moufManager->addComponentInstances(array (
       'renderer' => 'textFieldRenderer',
     ),
   ),
+  'projectFormprojectTypeIdDesc' => 
+  array (
+    'class' => 'Mouf\\MVC\\BCE\\Classes\\Descriptors\\ForeignKeyFieldDescriptor',
+    'external' => false,
+    'weak' => false,
+    'fieldProperties' => 
+    array (
+      'fieldName' => 
+      array (
+        'value' => 'project_type_id',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'formatter' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'editCondition' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'viewCondition' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'getter' => 
+      array (
+        'value' => 'getProjectTypeId',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'setter' => 
+      array (
+        'value' => 'setProjectTypeId',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'dataMethod' => 
+      array (
+        'value' => 'getList',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'linkedIdGetter' => 
+      array (
+        'value' => 'getId',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'linkedLabelGetter' => 
+      array (
+        'value' => 'getLabel',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+    'setterProperties' => 
+    array (
+      'setLabel' => 
+      array (
+        'value' => 'Project type',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'setDescription' => 
+      array (
+        'value' => '',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+    'fieldBinds' => 
+    array (
+      'renderer' => 'selectFieldRenderer',
+      'dao' => 'projectTypeDao',
+    ),
+    'setterBinds' => 
+    array (
+      'setValidators' => 
+      array (
+        0 => 'numericValidatorDecimals',
+      ),
+    ),
+  ),
   'projectFormuserIdDesc' => 
   array (
     'class' => 'Mouf\\MVC\\BCE\\Classes\\Descriptors\\ForeignKeyFieldDescriptor',
@@ -1534,6 +1726,15 @@ $moufManager->addComponentInstances(array (
       array (
         0 => 'numericValidatorDecimals',
       ),
+    ),
+  ),
+  'projectTypeDao' => 
+  array (
+    'class' => 'Test\\Dao\\ProjectTypeDao',
+    'external' => false,
+    'setterBinds' => 
+    array (
+      'setTdbmService' => 'tdbmService',
     ),
   ),
   'psr.errorLogLogger' => 
@@ -1690,6 +1891,427 @@ $moufManager->addComponentInstances(array (
   array (
     'class' => 'Mouf\\Utils\\Session\\SessionManager\\DefaultSessionManager',
     'external' => false,
+  ),
+  'simpleUserForm' => 
+  array (
+    'class' => 'Mouf\\MVC\\BCE\\BCEForm',
+    'external' => false,
+    'weak' => false,
+    'fieldBinds' => 
+    array (
+      'mainDAO' => 'userDao',
+      'scriptManager' => 'scriptManager',
+      'idFieldDescriptor' => 'simpleUserFormidDesc',
+      'fieldDescriptors' => 
+      array (
+        0 => 'simpleUserFormroleIdDesc',
+        1 => 'simpleUserFormnameDesc',
+        2 => 'simpleUserFormemailDesc',
+      ),
+      'validationHandler' => 'queryValidateHandler',
+      'renderer' => 'aseRenderer',
+    ),
+    'fieldProperties' => 
+    array (
+      'action' => 
+      array (
+        'value' => 'saveUserSimple',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'method' => 
+      array (
+        'value' => 'POST',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'saveLabel' => 
+      array (
+        'value' => 'Save changes',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'cancelLabel' => 
+      array (
+        'value' => 'Cancel',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'attributes' => 
+      array (
+        'value' => 
+        array (
+          'name' => 'default_name',
+          'id' => 'default_id',
+          'acceptCharset' => 'UTF-8',
+          'enctype' => 'application/x-www-form-urlencoded',
+          'class' => '',
+        ),
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  'simpleUserFormemailDesc' => 
+  array (
+    'class' => 'Mouf\\MVC\\BCE\\Classes\\Descriptors\\BaseFieldDescriptor',
+    'external' => false,
+    'weak' => false,
+    'fieldProperties' => 
+    array (
+      'fieldName' => 
+      array (
+        'value' => 'email',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'formatter' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'editCondition' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'viewCondition' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'getter' => 
+      array (
+        'value' => 'getEmail',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'setter' => 
+      array (
+        'value' => 'setEmail',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+    'setterProperties' => 
+    array (
+      'setLabel' => 
+      array (
+        'value' => 'Email',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'setDescription' => 
+      array (
+        'value' => '',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+    'fieldBinds' => 
+    array (
+      'renderer' => 'textFieldRenderer',
+    ),
+    'setterBinds' => 
+    array (
+      'setValidators' => 
+      array (
+        0 => 'emailValidator',
+      ),
+    ),
+  ),
+  'simpleUserFormidDesc' => 
+  array (
+    'class' => 'Mouf\\MVC\\BCE\\Classes\\Descriptors\\BaseFieldDescriptor',
+    'external' => false,
+    'weak' => false,
+    'fieldProperties' => 
+    array (
+      'fieldName' => 
+      array (
+        'value' => 'id',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'formatter' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'getter' => 
+      array (
+        'value' => 'getId',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'setter' => 
+      array (
+        'value' => 'setId',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+    'setterProperties' => 
+    array (
+      'setLabel' => 
+      array (
+        'value' => 'Id',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'setDescription' => 
+      array (
+        'value' => '',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+    'fieldBinds' => 
+    array (
+      'renderer' => 'hiddenRenderer',
+    ),
+    'setterBinds' => 
+    array (
+      'setValidators' => 
+      array (
+        0 => 'numericValidatorDecimals',
+      ),
+    ),
+  ),
+  'simpleUserFormnameDesc' => 
+  array (
+    'class' => 'Mouf\\MVC\\BCE\\Classes\\Descriptors\\BaseFieldDescriptor',
+    'external' => false,
+    'weak' => false,
+    'fieldProperties' => 
+    array (
+      'fieldName' => 
+      array (
+        'value' => 'name',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'formatter' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'editCondition' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'viewCondition' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'getter' => 
+      array (
+        'value' => 'getName',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'setter' => 
+      array (
+        'value' => 'setName',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+    'setterProperties' => 
+    array (
+      'setLabel' => 
+      array (
+        'value' => 'Name',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'setDescription' => 
+      array (
+        'value' => '',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'setValidators' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+    'fieldBinds' => 
+    array (
+      'renderer' => 'textFieldRenderer',
+    ),
+  ),
+  'simpleUserFormroleIdDesc' => 
+  array (
+    'class' => 'Mouf\\MVC\\BCE\\Classes\\Descriptors\\ForeignKeyFieldDescriptor',
+    'external' => false,
+    'weak' => false,
+    'fieldProperties' => 
+    array (
+      'fieldName' => 
+      array (
+        'value' => 'role_id',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'formatter' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'viewCondition' => 
+      array (
+        'value' => NULL,
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'getter' => 
+      array (
+        'value' => 'getRoleId',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'setter' => 
+      array (
+        'value' => 'setRoleId',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'dataMethod' => 
+      array (
+        'value' => 'getList',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'linkedIdGetter' => 
+      array (
+        'value' => 'getId',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'linkedLabelGetter' => 
+      array (
+        'value' => 'getLabel',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+    'setterProperties' => 
+    array (
+      'setLabel' => 
+      array (
+        'value' => 'Role',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'setDescription' => 
+      array (
+        'value' => '',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+    'fieldBinds' => 
+    array (
+      'renderer' => 'selectFieldRenderer',
+      'editCondition' => 'falseCondition',
+      'dao' => 'roleDao',
+    ),
+    'setterBinds' => 
+    array (
+      'setValidators' => 
+      array (
+        0 => 'numericValidatorDecimals',
+      ),
+    ),
   ),
   'skillDao' => 
   array (
@@ -1905,7 +2527,8 @@ $moufManager->addComponentInstances(array (
     array (
       'template' => 'bootstrapTemplate',
       'content' => 'block.content',
-      'formInstance' => '__anonymous__743966_1390581890217',
+      'completeFormInstance' => '__anonymous__743966_1390581890217',
+      'simpleUserFormInstance' => '__anonymous__292100_1392796318819',
     ),
   ),
   'userDao' => 
@@ -1989,6 +2612,12 @@ $moufManager->addComponentInstances(array (
         array (
         ),
       ),
+    ),
+    'setterProperties' => 
+    array (
+    ),
+    'setterBinds' => 
+    array (
     ),
   ),
   'userFormbirthDateDesc' => 
@@ -2920,6 +3549,13 @@ unset($moufManager);
 	 }
 
 	/**
+	 * @return Mouf\Database\Patcher\DatabasePatch
+	 */
+	 public static function getDbpatch_20140218patchinitialdumpimport() {
+	 	return MoufManager::getMoufManager()->getInstance('dbpatch.20140218-patch-initial-dump-import');
+	 }
+
+	/**
 	 * @return Mouf\MVC\BCE\FormRenderers\Bootstrap\Wrappers\DefaultFieldWrapperRenderer
 	 */
 	 public static function getDefaultFieldWrapperRenderer() {
@@ -3139,6 +3775,13 @@ unset($moufManager);
 	/**
 	 * @return Mouf\Html\Renderer\FileBasedRenderer
 	 */
+	 public static function getPackageRenderer_moufhtml_widgets_menu() {
+	 	return MoufManager::getMoufManager()->getInstance('packageRenderer_mouf/html.widgets.menu');
+	 }
+
+	/**
+	 * @return Mouf\Html\Renderer\FileBasedRenderer
+	 */
 	 public static function getPackageRenderer_moufhtml_widgets_messageservice() {
 	 	return MoufManager::getMoufManager()->getInstance('packageRenderer_mouf/html.widgets.messageservice');
 	 }
@@ -3155,6 +3798,13 @@ unset($moufManager);
 	 */
 	 public static function getPatchService() {
 	 	return MoufManager::getMoufManager()->getInstance('patchService');
+	 }
+
+	/**
+	 * @return Test\Dao\PatcheDao
+	 */
+	 public static function getPatcheDao() {
+	 	return MoufManager::getMoufManager()->getInstance('patcheDao');
 	 }
 
 	/**
@@ -3188,8 +3838,22 @@ unset($moufManager);
 	/**
 	 * @return Mouf\MVC\BCE\Classes\Descriptors\ForeignKeyFieldDescriptor
 	 */
+	 public static function getProjectFormprojectTypeIdDesc() {
+	 	return MoufManager::getMoufManager()->getInstance('projectFormprojectTypeIdDesc');
+	 }
+
+	/**
+	 * @return Mouf\MVC\BCE\Classes\Descriptors\ForeignKeyFieldDescriptor
+	 */
 	 public static function getProjectFormuserIdDesc() {
 	 	return MoufManager::getMoufManager()->getInstance('projectFormuserIdDesc');
+	 }
+
+	/**
+	 * @return Test\Dao\ProjectTypeDao
+	 */
+	 public static function getProjectTypeDao() {
+	 	return MoufManager::getMoufManager()->getInstance('projectTypeDao');
 	 }
 
 	/**
@@ -3295,6 +3959,41 @@ unset($moufManager);
 	 */
 	 public static function getSessionManager() {
 	 	return MoufManager::getMoufManager()->getInstance('sessionManager');
+	 }
+
+	/**
+	 * @return Mouf\MVC\BCE\BCEForm
+	 */
+	 public static function getSimpleUserForm() {
+	 	return MoufManager::getMoufManager()->getInstance('simpleUserForm');
+	 }
+
+	/**
+	 * @return Mouf\MVC\BCE\Classes\Descriptors\BaseFieldDescriptor
+	 */
+	 public static function getSimpleUserFormemailDesc() {
+	 	return MoufManager::getMoufManager()->getInstance('simpleUserFormemailDesc');
+	 }
+
+	/**
+	 * @return Mouf\MVC\BCE\Classes\Descriptors\BaseFieldDescriptor
+	 */
+	 public static function getSimpleUserFormidDesc() {
+	 	return MoufManager::getMoufManager()->getInstance('simpleUserFormidDesc');
+	 }
+
+	/**
+	 * @return Mouf\MVC\BCE\Classes\Descriptors\BaseFieldDescriptor
+	 */
+	 public static function getSimpleUserFormnameDesc() {
+	 	return MoufManager::getMoufManager()->getInstance('simpleUserFormnameDesc');
+	 }
+
+	/**
+	 * @return Mouf\MVC\BCE\Classes\Descriptors\ForeignKeyFieldDescriptor
+	 */
+	 public static function getSimpleUserFormroleIdDesc() {
+	 	return MoufManager::getMoufManager()->getInstance('simpleUserFormroleIdDesc');
 	 }
 
 	/**
@@ -3491,13 +4190,6 @@ unset($moufManager);
 	 */
 	 public static function getValidatorsTranslateService() {
 	 	return MoufManager::getMoufManager()->getInstance('validatorsTranslateService');
-	 }
-
-	/**
-	 * @return Mouf\Database\Patcher\DatabasePatch
-	 */
-	 public static function getDbpatch_20140218patchinitialdumpimport() {
-	 	return MoufManager::getMoufManager()->getInstance('dbpatch.20140218-patch-initial-dump-import');
 	 }
 
 }

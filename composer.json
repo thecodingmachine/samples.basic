@@ -16,7 +16,7 @@
         "mouf/mouf": "~2.0",
         "mouf/database.tdbm": "~3.0",
         "mouf/mvc.splash": "~4.0",
-        "mouf/html.template.bootstrap": "~2.3",
+        "mouf/html.template.bootstrap": "3.*",
         "mouf/mvc.bce": "~3.0",
         "mouf/html.widgets.evolugrid": "~3.0",
         "twitter/bootstrap": "3.0.*@dev",

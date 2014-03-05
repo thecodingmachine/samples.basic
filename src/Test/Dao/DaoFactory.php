@@ -13,6 +13,31 @@ namespace Test\Dao;
 class DaoFactory 
 {
 	/**
+	 * @var PatcheDao
+	 */
+	private $patcheDao;
+
+	/**
+	 * Returns an instance of the PatcheDao class.
+	 * 
+	 * @return PatcheDao
+	 */
+	public function getPatcheDao() {
+		return $this->patcheDao;
+	}
+	
+	/**
+	 * Sets the instance of the PatcheDao class that will be returned by the factory getter.
+	 * 
+	 * @Property
+	 * @Compulsory
+	 * @param PatcheDao $patcheDao
+	 */
+	public function setPatcheDao(PatcheDao $patcheDao) {
+		$this->patcheDao = $patcheDao;
+	}
+	
+	/**
 	 * @var ProjectDao
 	 */
 	private $projectDao;

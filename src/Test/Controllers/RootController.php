@@ -35,4 +35,16 @@ class RootController extends Controller {
 		$this->content->addFile(ROOT_PATH."src/views/root/index.php", $this);
 		$this->template->toHtml();
 	}
+	
+	/**
+	 * BCE Index page
+	 * 
+	 * @URL bce-index
+	 */
+	public function bceIndex() {
+		$this->content->addFile(ROOT_PATH."src/views/root/bce-index.php", $this);
+		$this->template->toHtml();
+	}
+	
+	
 }

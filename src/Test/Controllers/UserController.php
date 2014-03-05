@@ -33,7 +33,41 @@ class UserController extends Controller {
 	/**
 	 * @var BCEFormInstance
 	 */
-	public $formInstance;
+	public $simpleUserFormInstance;
+	
+	/**
+	 * @var BCEFormInstance
+	 */
+	public $completeFormInstance;
+	
+	/**
+	 * User edition page.
+	 * @param string $id the user's id (null for creation)
+	 * @URL editSimpleUser
+	 */
+	public function editSimpleUser($id = null) {
+		$this->simpleUserFormInstance->load($id);
+		
+		$this->content->addFile(ROOT_PATH."src/views/user/edit-user-simple.php", $this);
+		$this->template->toHtml();
+	}
+	
+	/**
+	 * Save the user into DB.
+	 * @URL saveUserSimple
+	 */
+	public function saveUserSimple() {
+		$id = $this->simpleUserFormInstance->save();
+
+		if ($id){
+			set_user_message("User has been saved", UserMessageInterface::SUCCESS);
+		}else{
+			set_user_message("An error occured while saving the user", UserMessageInterface::ERROR);
+		}
+		
+		header("location:".ROOT_URL."editSimpleUser?id=".$id);
+		return;
+	}
 	
 	/**
 	 * User edition page.
@@ -41,7 +75,7 @@ class UserController extends Controller {
 	 * @URL editUser
 	 */
 	public function editUser($id = null) {
-		$this->formInstance->load($id);
+		$this->completeFormInstance->load($id);
 		
 		$this->content->addFile(ROOT_PATH."src/views/user/edit-user.php", $this);
 		$this->template->toHtml();
@@ -52,7 +86,7 @@ class UserController extends Controller {
 	 * @URL saveUser
 	 */
 	public function saveUser() {
-		$id = $this->formInstance->save();
+		$id = $this->completeFormInstance->save();
 
 		if ($id){
 			set_user_message("User has been saved", UserMessageInterface::SUCCESS);

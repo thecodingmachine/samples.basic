@@ -108,7 +108,7 @@ return array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
-    'package' => 'mouf/utils.i18n.fine',
+    'package' => 'mouf/html.widgets.menu',
   ),
   15 => 
   array (
@@ -135,94 +135,101 @@ return array (
   array (
     'status' => 'done',
     'type' => 'file',
+    'file' => 'src/install.php',
+    'package' => 'mouf/utils.i18n.fine',
+  ),
+  19 => 
+  array (
+    'status' => 'done',
+    'type' => 'file',
     'file' => 'src/validatorsInstall.php',
     'package' => 'mouf/utils.common.validators',
   ),
-  19 => 
+  20 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/splashCommonInstall.php',
     'package' => 'mouf/mvc.splash-common',
   ),
-  20 => 
+  21 => 
   array (
     'status' => 'done',
     'type' => 'class',
     'class' => 'Mouf\\Utils\\Constants\\SecretInstaller',
     'package' => 'mouf/utils.constants.secret',
   ),
-  21 => 
+  22 => 
   array (
     'status' => 'done',
     'type' => 'url',
     'url' => 'splashinstall/',
     'package' => 'mouf/mvc.splash',
   ),
-  22 => 
+  23 => 
   array (
     'status' => 'done',
     'type' => 'url',
     'url' => 'splashinstall/writeHtAccess',
     'package' => 'mouf/mvc.splash',
   ),
-  23 => 
+  24 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/html.utils.ckeditor',
   ),
-  24 => 
+  25 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/javascript.fileuploader',
   ),
-  25 => 
+  26 => 
   array (
     'status' => 'done',
     'type' => 'class',
     'class' => 'Mouf\\Html\\Widgets\\Form\\FormElementInstaller',
     'package' => 'mouf/html.widgets.form-elements',
   ),
-  26 => 
+  27 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/javascript.jquery.jquery-ui',
   ),
-  27 => 
+  28 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/javascript.jquery.jquery-validate',
   ),
-  28 => 
+  29 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/install.php',
     'package' => 'mouf/utils.common.formatters',
   ),
-  29 => 
+  30 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'src/bceInstall.php',
     'package' => 'mouf/mvc.bce',
   ),
-  30 => 
+  31 => 
   array (
     'status' => 'done',
     'type' => 'file',
     'file' => 'install.php',
     'package' => 'mouf/javascript.historyjs',
   ),
-  31 => 
+  32 => 
   array (
     'status' => 'done',
     'type' => 'file',
