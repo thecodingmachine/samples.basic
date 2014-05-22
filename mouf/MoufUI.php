@@ -10,6 +10,7 @@ require_once __DIR__.'/../vendor/mouf/database.patcher/src/DBPatchAdmin.php';
 require_once __DIR__.'/../vendor/mouf/database.querywriter/src/QueryWriterAdmin.php';
 require_once __DIR__.'/../vendor/mouf/utils.cache.cache-interface/CacheAdmin.php';
 require_once __DIR__.'/../vendor/mouf/database.tdbm/src/TdbmAdmin.php';
+require_once __DIR__.'/../vendor/mouf/html.utils.weblibrarymanager/src/WebLibraryAdmin.php';
 require_once __DIR__.'/../vendor/mouf/utils.i18n.fine/src/FineAdmin.php';
 require_once __DIR__.'/../vendor/mouf/mvc.splash-common/src/SplashCommonAdmin.php';
 require_once __DIR__.'/../vendor/mouf/html.widgets.evolugrid/src/EvolugridAdmin.php';
